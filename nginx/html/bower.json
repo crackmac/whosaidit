@@ -1,0 +1,26 @@
+{
+  "name": "bower_test",
+  "authors": [
+    "Kevin Duane <kevin.duane@disney.com>"
+  ],
+  "description": "Testing Bower",
+  "main": "index.html",
+  "keywords": [
+    "bower",
+    "angular",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "http://localhost:32777",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.7",
+    "bootstrap": "^3.3.6"
+  }
+}
