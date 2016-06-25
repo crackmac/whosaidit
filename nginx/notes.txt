@@ -1,0 +1,48 @@
+
+## http works
+docker run \
+  -it \
+  -v $(pwd)/client.key:/var/cert/client.key \
+  -v $(pwd)/client.crt:/var/cert/client.crt \
+  speg03/curl --insecure \
+      --key /var/cert/client.key \
+      --cert /var/cert/client.crt \
+      http://172.17.0.3/helloworld
+      
+
+## http working
+docker run \
+  -it \
+  -v $(pwd)/client.key:/var/cert/client.key \
+  -v $(pwd)/client.crt:/var/cert/client.crt \
+  speg03/curl --insecure \
+      --key /var/cert/client.key \
+      --cert /var/cert/client.crt \
+      https://172.17.0.3/helloworld
+
+      
+## MSFT 
+docker run \
+-it \                                                                                                           
+-v $(pwd)/mdollar2.key:/var/cert/client.key \
+-v $(pwd)/mdollar2.pem:/var/cert/client.crt \
+speg03/curl --insecure \
+    --key /var/cert/client.key \
+    --cert /var/cert/client.crt \
+    https://172.17.0.3/helloworld
+
+
+## mutualauth
+
+docker run \
+  -it \
+  -v $(pwd)/mutalauth.keychest.disney.go.com.key:/var/cert/client.key \
+  -v $(pwd)/mutalauth.keychest.disney.go.com.cer:/var/cert/client.crt \
+  speg03/curl --insecure \
+      --key /var/cert/client.key \
+      --cert /var/cert/client.crt \
+      https://172.17.0.3/helloworld
+
+
+# needed to set ssl_verify_depth to greater than the default (1)
+# http://stackoverflow.com/questions/8431528/nginx-ssl-certificate-authentication-signed-by-intermediate-ca-chain

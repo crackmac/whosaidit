@@ -1,0 +1,11 @@
+nginx:
+  build: nginx
+  environment: 
+    ENV: test
+  volumes:
+    - ./nginx/certs:/etc/nginx/certs
+    - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+    - ./nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
+  ports:
+    - '443'
+    - '80'
