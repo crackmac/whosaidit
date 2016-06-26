@@ -22,7 +22,7 @@ RUN npm install bower -g
 #RUN chown -R nginx /etc/nginx
 
 
-COPY ./html /usr/share/nginx/html
+#COPY ./html /usr/share/nginx/html
 
 # EXPOSE 80
 # CMD ["nginx"]

@@ -5,5 +5,16 @@ https://www.digitalocean.com/community/tutorials/how-to-manage-front-end-javascr
 # angularjs tutorial
 https://docs.angularjs.org/tutorial
 
+# angular quiz app example
+https://github.com/odhyan/quizapp-angular
+# fork: miniquiz
+https://github.com/deviodigital/miniQuiz
+
+#######################
+
 # bootstrap getting started
 http://getbootstrap.com/getting-started/
+
+# bootstrap examples
+https://github.com/twbs/bootstrap/tree/master/docs/examples
+
