@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html ng-app="quizApp">
-    <head>
-        <meta charset="utf-8" />
-        <title>QuizApp</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="bower_components/angular/angular.min.js"></script>
-        <script src="app.js"></script>
-    </head>
+<html lang="en" ng-app="miniQuiz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <body>
-        <div class="container">
-            <h1 class="title">QuizApp</h1>
-            <quiz/>
-        </div>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<title>whosaidit &dash; Built by Maylla Industries</title>
 
-    </body>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic" />
+	<!-- QuizApp CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- QuizApp Scripts -->
+	<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+	<script src="js/app.js"></script>
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html" ng-click="reset()"></span> WhoSaidIt</a>
+		</div>
+	<div id="navbar" class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="http://maylla.com"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Maylla Industries</a></li>
+		</ul>
+	</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<div class="container theme-showcase" role="main">
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<h1><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> WhoSaidIt</h1>
+		<p>Democrats vs Republicans</p>
+	</div>
+
+	<quiz/>
+
+</div><!--/ .container -->
+
+<footer>
+	<p>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by <a href="http://maylla.com" target="_blank">Maylla Industries</a></p>
+</footer><!--/ footer -->
+
+</body>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
 </html>

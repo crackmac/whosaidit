@@ -40,6 +40,6 @@ Thumbs.db
 ####################
 node_modules
 npm-debug.log
-
+js
 bower_components
 npm-shrinkwrap.json
