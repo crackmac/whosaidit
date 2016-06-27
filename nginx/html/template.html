@@ -1,6 +1,6 @@
 <div class="quiz-area" ng-show="inProgress">
 	<div class="repeated-item" ng-show="!quizOver">
-		<h2 id="question">{{question}}</h2>
+		<h2 id="question">&ldquo;{{question}}&rdquo;</h2>
 		<ul id="options">
 			<li ng-repeat="option in options">
 				<label>
@@ -28,9 +28,9 @@
 	</div>
 
 	<div ng-show="quizOver">
-		<h2>You've completed the miniQuiz!</h2>
+		<h2>You've completed the WhoSaidIt Quiz!</h2>
 		<p>Congratulations! Share your score with friends and invite them to beat you ... if they can :)</p>
-		<a href="http://twitter.com/home?status=I%20just%20took%20the%20miniQuiz%20and%20got%20{{score}}%20out%20of%20{{options.length+1}}%20answers%20correct!%20Try%20and%20beat%20me%20here:%20http://www.robertdevore.com/demo/miniquiz/%20#miniQuiz" target="_blank" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Tweet Your Score</a>
+		<a href="http://twitter.com/home?status=I%20just%20took%20the%20WhoSaidIt%20Quiz%20and%20got%20{{score}}%20out%20of%20{{options.length+1}}%20answers%20correct!%20Try%20and%20beat%20me%20here:%20http://maylla.com/whosaidit/" target="_blank" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Tweet Your Score</a>
 		<button class="btn btn-lg btn-default" ng-click="reset()"><span class="glyphicon glyphicon-left" aria-hidden="true"></span> Play again</button>
 	</div>
 
@@ -40,6 +40,7 @@
 </div>
 
 <div class="intro" ng-show="!inProgress">
-	<p>The following quiz is written in AngularJS, is 5 questions long, all of which are hiphop related for the demo. You can test the demo here, or <a href="https://github.com/deviodigital/miniQuiz" target="_blank">download</a> the app from Github.</p>
+  <p>Read the following quotes and see if you know the political party of the speaker.</p>
+  <p>Extra points if you know the origin of the quots (feature todo).</p>
 	<button class="btn btn-lg btn-primary" id="startQuiz" ng-click="start()"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Start the Quiz</button>
 </div>
